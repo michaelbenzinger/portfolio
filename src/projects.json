@@ -1,0 +1,85 @@
+[
+  {
+    "name": "Weather App",
+    "technologies": [
+      {
+        "name": "JS",
+        "colors": ["yellow", "black"]
+      },
+      {
+        "name": "API",
+        "colors": ["black", "white"]
+      },
+      {
+        "name": "CSS",
+        "colors": ["blue", "white"]
+      },
+      {
+        "name": "Webpack",
+        "colors": ["blue", "white"]
+      },
+      {
+        "name": "HTML",
+        "colors": ["red", "white"]
+      }
+    ],
+    "description": "A weather application that makes use of the OpenWeather API to fetch and display the weather anywhere in the world.",
+    "linkGithub": "#",
+    "linkPreview": "#",
+    "imgSrc": "image-sample.png"
+  },
+  {
+    "name": "To-do List",
+    "technologies": [
+      {
+        "name": "JS",
+        "colors": ["yellow", "black"]
+      },
+      {
+        "name": "CSS",
+        "colors": ["blue", "white"]
+      },
+      {
+        "name": "Webpack",
+        "colors": ["blue", "white"]
+      },
+      {
+        "name": "HTML",
+        "colors": ["red", "white"]
+      }
+    ],
+    "description": "A clean, beautiful To-do List with an intuitive and responsive UI. Written entirely in JavaScript.",
+    "linkGithub": "#",
+    "linkPreview": "#",
+    "imgSrc": "image-sample.png"
+  },
+  {
+    "name": "Battleship",
+    "technologies": [
+      {
+        "name": "JS",
+        "colors": ["yellow", "black"]
+      },
+      {
+        "name": "CSS",
+        "colors": ["blue", "white"]
+      },
+      {
+        "name": "Jest",
+        "colors": ["lime", "black"]
+      },
+      {
+        "name": "Webpack",
+        "colors": ["blue", "white"]
+      },
+      {
+        "name": "HTML",
+        "colors": ["red", "white"]
+      }
+    ],
+    "description": "The classic game of Battleship implement in JavaScript with a smart enemy AI.",
+    "linkGithub": "#",
+    "linkPreview": "#",
+    "imgSrc": "image-sample.png"
+  }
+]

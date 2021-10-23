@@ -1,0 +1,27 @@
+.nav__bar {
+  width: 100vw;
+  padding: 1.6rem 0 1.4rem 0;
+  background-color: white;
+  border-bottom: 2px solid black;
+  position: fixed;
+  z-index: 3;
+}
+
+nav {
+  text-align: right;
+}
+
+a {
+  color: black;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-left: 2.2rem;
+  border-bottom: 2px solid rgba(0,0,0,0);
+  transition: border-bottom-color 0.1s;
+}
+
+a:hover {
+  border-bottom: 2px solid rgba(0,0,0,1);
+  margin-bottom: 3px;
+  transition: border-bottom-color 0.3s;
+}
