@@ -1,0 +1,50 @@
+{
+  "JS": {
+    "full": "JavaScript",
+    "colors": ["#f6d71d", "black"]
+  },
+  "HTML": {
+    "full": "HTML5",
+    "colors": ["#e54d26", "white"]
+  },
+  "CSS": {
+    "full": "CSS3",
+    "colors": ["#2aa9de", "white"]
+  },
+  "API": {
+    "full": "API",
+    "colors": ["#000000", "white"]
+  },
+  "Jest": {
+    "full": "Jest",
+    "colors": ["#60c40c", "white"]
+  },
+  "Webpack": {
+    "full": "Webpack",
+    "colors": ["#527bb3", "white"]
+  },
+  "React": {
+    "full": "React",
+    "colors": ["#83e1fb", "black"]
+  },
+  "Node": {
+    "full": "Node.js",
+    "colors": ["#68a643", "white"]
+  },
+  "Git": {
+    "full": "Git",
+    "colors": ["#f24e32", "white"]
+  },
+  "Sass": {
+    "full": "Sass",
+    "colors": ["#cf649a", "white"]
+  },
+  "Bootstrap": {
+    "full": "Bootstrap",
+    "colors": ["#7a52b3", "white"]
+  },
+  "Linux": {
+    "full": "Linux",
+    "colors": ["#3563a1", "white"]
+  }
+}

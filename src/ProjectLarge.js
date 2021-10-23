@@ -1,3 +1,13 @@
+import techInfo from './techInfo';
+import github from './images/github-32.png';
+
+function importAll(r) {
+  let images = {};
+   r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
+
 function ProjectLarge(props) {
   const {
     imgSrc,
@@ -8,34 +18,35 @@ function ProjectLarge(props) {
     linkPreview
   } = props.props;
 
-  function importAll(r) {
-    let images = {};
-     r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
-    return images;
-  }
-  const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
-
   console.log(images[imgSrc].default);
 
   return (
     <div className="project-large">
       <div className='project-large__left'>
-        <img src={images[imgSrc].default}></img>
+        <a href={linkPreview} target='_blank'>
+          <img src={images[imgSrc].default}/>
+        </a>
       </div>
       <div className='project-large__right'>
         <h2 className='project-large__title'>{name}</h2>
         <div className='project-large__technologies'>
         {technologies.map(tech => {
           return <div className='project-large__technology'
-            style={{
-              'background-color': tech.colors[0],
-              'color': tech.colors[1]
-            }}>{tech.name}</div>
+          style={{
+              'background-color': techInfo[tech].colors[0],
+              'color': techInfo[tech].colors[1]
+            }}>{tech}</div>
         })}
         </div>
         <p className='project-large__description'>{description}</p>
-        <button className='project-large__github' href={linkGithub}>View on Github</button>
-        <button className='project-large__preview' href={linkPreview}>Live Preview</button>
+        <a href={linkPreview} target='_blank'>
+          <button className='project-large__preview button__yellow'>Live Preview</button>
+        </a>
+        <a href={linkGithub} target='_blank'>
+          <button className='project-large__github'>
+            <img src={github}/> <span>Github</span>
+          </button>
+        </a>
       </div>
     </div>
   );

@@ -1,85 +1,26 @@
 [
   {
     "name": "Weather App",
-    "technologies": [
-      {
-        "name": "JS",
-        "colors": ["yellow", "black"]
-      },
-      {
-        "name": "API",
-        "colors": ["black", "white"]
-      },
-      {
-        "name": "CSS",
-        "colors": ["blue", "white"]
-      },
-      {
-        "name": "Webpack",
-        "colors": ["blue", "white"]
-      },
-      {
-        "name": "HTML",
-        "colors": ["red", "white"]
-      }
-    ],
+    "technologies": ["JS", "API", "CSS", "Webpack", "HTML"],
     "description": "A weather application that makes use of the OpenWeather API to fetch and display the weather anywhere in the world.",
-    "linkGithub": "#",
-    "linkPreview": "#",
-    "imgSrc": "image-sample.png"
+    "linkGithub": "https://github.com/michaelbenzinger/weather-app",
+    "linkPreview": "https://michaelbenzinger.github.io/weather-app/",
+    "imgSrc": "sample-weather.png"
   },
   {
     "name": "To-do List",
-    "technologies": [
-      {
-        "name": "JS",
-        "colors": ["yellow", "black"]
-      },
-      {
-        "name": "CSS",
-        "colors": ["blue", "white"]
-      },
-      {
-        "name": "Webpack",
-        "colors": ["blue", "white"]
-      },
-      {
-        "name": "HTML",
-        "colors": ["red", "white"]
-      }
-    ],
+    "technologies": ["JS", "CSS", "Webpack", "HTML"],
     "description": "A clean, beautiful To-do List with an intuitive and responsive UI. Written entirely in JavaScript.",
-    "linkGithub": "#",
-    "linkPreview": "#",
-    "imgSrc": "image-sample.png"
+    "linkGithub": "https://github.com/michaelbenzinger/todo-app",
+    "linkPreview": "https://michaelbenzinger.github.io/todo-app/",
+    "imgSrc": "sample-todo.png"
   },
   {
     "name": "Battleship",
-    "technologies": [
-      {
-        "name": "JS",
-        "colors": ["yellow", "black"]
-      },
-      {
-        "name": "CSS",
-        "colors": ["blue", "white"]
-      },
-      {
-        "name": "Jest",
-        "colors": ["lime", "black"]
-      },
-      {
-        "name": "Webpack",
-        "colors": ["blue", "white"]
-      },
-      {
-        "name": "HTML",
-        "colors": ["red", "white"]
-      }
-    ],
+    "technologies": ["JS", "CSS", "Jest", "Webpack", "HTML"],
     "description": "The classic game of Battleship implement in JavaScript with a smart enemy AI.",
-    "linkGithub": "#",
-    "linkPreview": "#",
-    "imgSrc": "image-sample.png"
+    "linkGithub": "https://github.com/michaelbenzinger/battleship",
+    "linkPreview": "https://michaelbenzinger.github.io/battleship/",
+    "imgSrc": "sample-battleship.png"
   }
 ]

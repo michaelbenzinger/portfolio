@@ -1,0 +1,25 @@
+.more-projects {
+  background-color: var(--light-blue, #eff3f6);
+}
+
+.more-projects .section-title {
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+.more-projects__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-projects a {
+  margin: 3rem 0 5rem 0;
+}
+
+.more-projects button {
+  font-weight: 500;
+  padding: 1.1rem 2rem;
+  color: white;
+}

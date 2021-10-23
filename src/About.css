@@ -1,0 +1,82 @@
+.about {
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+
+.about__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.about__left {
+  width: 55%;
+}
+
+.about__right {
+  margin-left: 3rem;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.about__headline {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.about__article p {
+  font-size: 1.1rem;
+  line-height: 1.55em;
+  margin-block-end: 1rem;
+}
+
+.about__technologies {
+  padding-bottom: 1rem;
+}
+
+.about__technology {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin-right: 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 100px;
+  user-select: none;
+}
+
+.about__tagline {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1em;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.about__email {
+  font-size: 1.1rem;
+}
+
+.about__resume {
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-left: 1.4rem;
+  border-bottom: 2px solid rgba(0,0,0,1);
+  transition: color 0.1s, border-bottom-color 0.1s;
+}
+.about__resume:hover {
+  color: #253c66;
+  border-bottom: 2px solid #253c66;
+}
+.about__resume:active {
+  color: #4274cf;
+  border-bottom: 2px solid #4274cf;
+}

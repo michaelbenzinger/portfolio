@@ -4,6 +4,7 @@ import portrait from './images/portrait.jpg'
 function Hero() {
   return (
     <div className='hero'>
+      <a className='anchor' id='home'/>
       <div className='contained'>
         <div className='hero__container'>
           <div>

@@ -1,0 +1,20 @@
+{
+  "headline": "I am a self-taught developer.",
+  "article": "I graduated from Berklee College of Music with a degree in Film and Video Game Scoring. Since then, I've worked primarily as a church music director. I've done freelance work as a graphic designer and a piano teacher. But I wanted to be challenged. I wanted to get into software—to put in the work to learn something new and exciting, to build applications and solve real problems.\nSo I switched gears.\nI considered returning to school for a degree in Computer Science or signing up for a coding bootcamp. In the end, I chose to teach myself—to make use of online resources, articles, and documentation, podcasts and lectures... to learn the world of JavaScript web development.\nI grew my skills as a programmer for a number of months, and in September, I left my job as a music director to throw myself into software development full time.\nBeing self-taught means that I am resourceful, I'm driven, and I have the discipline to see any project through to the end.",
+  "technologies": [
+    "JS",
+    "HTML",
+    "CSS",
+    "React",
+    "Node",
+    "Webpack",
+    "Git",
+    "Jest",
+    "Sass",
+    "Bootstrap",
+    "Linux"
+  ],
+  "tagline": "I'd love to be an asset to your team.",
+  "emailLink": "mailto:michaelbenzinger3@gmail.com",
+  "resumeSrc": ""
+}
