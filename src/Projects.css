@@ -31,7 +31,7 @@
 }
 
 .project-large__left a:hover img {
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .project-large__left img {
@@ -157,7 +157,7 @@
 }
 
 .project-small a:hover img {
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .project-small-title {
