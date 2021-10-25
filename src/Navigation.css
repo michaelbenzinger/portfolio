@@ -4,6 +4,7 @@
   background-color: white;
   border-bottom: 2px solid var(--p-gray, #41444d);
   position: fixed;
+  /* left: -0.45rem; */
   z-index: 3;
 }
 
@@ -11,17 +12,36 @@ nav {
   text-align: right;
 }
 
-nav a {
-  color: black;
-  font-size: 1.1rem;
-  text-decoration: none;
-  margin-left: 2.2rem;
-  border-bottom: 2px solid rgba(0,0,0,0);
-  transition: border-bottom-color 0.1s;
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav a:hover {
+nav a {
+  margin-left: 2em;
+}
+
+.nav__container a {
+  color: black;
+  font-size: min(calc(0.8rem + 0.5vw), 1.1rem);
+  text-decoration: none;
+  border-bottom: 2px solid rgba(0,0,0,0);
+  transition: border-bottom-color 0.1s, opacity 0.3s;
+}
+
+.nav__container a:hover {
   border-bottom: 2px solid rgba(0,0,0,1);
-  margin-bottom: 3px;
-  transition: border-bottom-color 0.3s;
+  transition: border-bottom-color 0.3s, opacity 0.3s;
+}
+
+.nav__title {
+  opacity: 0%;
+  pointer-events: none;
+}
+
+.link-unhidden {
+  opacity: 100%;
+  pointer-events: all;
 }

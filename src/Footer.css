@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--light-blue, #eff3f6);
+}
+
+.footer__main {
+  padding: 4rem 0 5rem;
+}
+
+.footer-title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.footer-link {
+  margin-right: 1.5rem;
+}
+
+.footer-links {
+  margin-bottom: 2rem;
+}
+
+.footer-copyright {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--p-gray, #41444d);
+}

@@ -22,5 +22,37 @@
     "linkGithub": "https://github.com/michaelbenzinger/battleship",
     "linkPreview": "https://michaelbenzinger.github.io/battleship/",
     "imgSrc": "sample-battleship.png"
+  },
+  {
+    "name": "Personal Library",
+    "technologies": ["JS", "CSS", "HTML"],
+    "description": "An application that allows the user to maintain a personal library of books.",
+    "linkGithub": "https://github.com/michaelbenzinger/library-project",
+    "linkPreview": "https://michaelbenzinger.github.io/library-project/",
+    "imgSrc": "sample-library.png"
+  },
+  {
+    "name": "Benzinger.co",
+    "technologies": ["JS", "CSS", "React", "Webpack", "HTML"],
+    "description": "My personal website, built and designed from scratch with the help of React.js.",
+    "linkGithub": "",
+    "linkPreview": "https://benzinger.co",
+    "imgSrc": "sample-benzinger.png"
+  },
+  {
+    "name": "Etch-a-Sketch",
+    "technologies": ["JS", "CSS", "HTML"],
+    "description": "A simple etch-a-sketch program written in JavaScript.",
+    "linkGithub": "https://github.com/michaelbenzinger/etch-a-sketch",
+    "linkPreview": "https://michaelbenzinger.github.io/etch-a-sketch/",
+    "imgSrc": "sample-etch-a-sketch.png"
+  },
+  {
+    "name": "Calculator",
+    "technologies": ["JS", "CSS", "HTML"],
+    "description": "A simple calculator in the neumorphism design style.",
+    "linkGithub": "https://github.com/michaelbenzinger/calculator",
+    "linkPreview": "https://michaelbenzinger.github.io/calculator/",
+    "imgSrc": "sample-calculator.png"
   }
 ]

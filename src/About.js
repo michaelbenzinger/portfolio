@@ -26,12 +26,12 @@ function About() {
           })}
         </div>
         <h3 className='about__tagline'>{about.tagline}</h3>
-        <a href={about.emailLink}>
+        <a tabIndex="-1" href={about.emailLink}>
           <button className='about__email button__large button__yellow'>Email</button>
         </a>
-        <a href={about.resumeSrc} className='about__resume'>
-          Resume (106kB)
-        </a>
+        {/* <a href={about.resumeSrc} className='about__resume link-default disabled'>
+          Resume
+        </a> */}
         </div>
       </div>
     </div>

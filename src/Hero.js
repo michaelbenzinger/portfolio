@@ -13,7 +13,9 @@ function Hero() {
           </div>
           <div className='hero__line'/>
           <div>
-            <img alt='Portrait of Michael Benzinger' className='hero__img' src={portrait}/>
+            {/* <a href='#contact'> */}
+              <img alt='Photo of Michael Benzinger' className='hero__img' src={portrait}/>
+            {/* </a> */}
           </div>
         </div>
       </div>
