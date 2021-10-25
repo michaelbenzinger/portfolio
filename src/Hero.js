@@ -4,7 +4,7 @@ import portrait from './images/portrait.jpg'
 function Hero() {
   return (
     <div className='hero'>
-      <a className='anchor' id='home'/>
+      <div className='anchor' id='home'/>
       <div className='contained'>
         <div className='hero__container'>
           <div>
@@ -14,7 +14,7 @@ function Hero() {
           <div className='hero__line'/>
           <div>
             {/* <a href='#contact'> */}
-              <img alt='Photo of Michael Benzinger' className='hero__img' src={portrait}/>
+              <img alt='Michael Benzinger' className='hero__img' src={portrait}/>
             {/* </a> */}
           </div>
         </div>

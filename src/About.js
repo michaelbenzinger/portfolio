@@ -5,7 +5,7 @@ import techInfo from './techInfo.json';
 function About() {
   return (
     <div className='about'>
-      <a className='anchor' id='about'/>
+      <div className='anchor' id='about'/>
       <div className='about__main contained'>
         <div className='about__left'>
           <h2 className='about__headline'>{about.headline}</h2>

@@ -9,17 +9,15 @@ function ProjectSmall(props) {
   const {
     imgSrc,
     name,
-    technologies,
     description,
-    linkGithub,
     linkPreview
   } = props.props;
 
   return (
     <div className="project-small">
       <h3 className="project-small-title">{name}</h3>
-      <a href={linkPreview} target='_blank'>
-        <img src={images[imgSrc].default}/>
+      <a href={linkPreview} target='_blank' rel='noreferrer'>
+        <img alt={`Preview of ${name}`} src={images[imgSrc].default}/>
       </a>
       <p className='project-small-description'>{description}</p>
     </div>

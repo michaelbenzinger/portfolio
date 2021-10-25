@@ -21,8 +21,8 @@ function ProjectLarge(props) {
   return (
     <div className="project-large">
       <div className='project-large__left'>
-        <a href={linkPreview} target='_blank'>
-          <img src={images[imgSrc].default}/>
+        <a href={linkPreview} target='_blank' rel='noreferrer'>
+          <img alt={`Preview of ${name}`}src={images[imgSrc].default}/>
         </a>
       </div>
       <div className='project-large__right'>
@@ -37,12 +37,12 @@ function ProjectLarge(props) {
         })}
         </div>
         <p className='project-large__description'>{description}</p>
-        <a tabIndex="-1" href={linkPreview} target='_blank'>
+        <a tabIndex="-1" href={linkPreview} target='_blank' rel='noreferrer'>
           <button className='project-large__preview button__yellow'>Live Preview</button>
         </a>
-        <a tabIndex="-1" href={linkGithub} target='_blank'>
+        <a tabIndex="-1" href={linkGithub} target='_blank' rel='noreferrer'>
           <button className='project-large__github'>
-            <img src={github}/> <span>Github</span>
+            <img alt='' src={github}/> <span>Github</span>
           </button>
         </a>
       </div>
