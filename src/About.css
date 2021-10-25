@@ -1,6 +1,6 @@
 .about {
-  padding-top: 10rem;
-  padding-bottom: 6rem;
+  padding-top: min(8rem, calc(0rem + 20vw));
+  padding-bottom: min(4rem, calc(0rem + 15vw));
 }
 
 .about__main {

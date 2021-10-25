@@ -1,6 +1,7 @@
 .hero__container {
   width: min(95%, 55rem);
-  padding: 9rem 0 10rem 0;
+  padding-top: min(10rem, calc(3rem + 10vw));
+  padding-bottom: min(10rem, calc(3rem + 10vw));
   display: flex;
   flex-direction: row;
   justify-content: space-between;

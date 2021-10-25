@@ -1,6 +1,6 @@
 .contact {
-  padding-top: 4rem;
-  padding-bottom: 13rem;
+  padding-top: min(4rem, calc(0rem + 5vw));
+  padding-bottom: min(10rem, calc(3rem + 15vw));
 }
 
 .contact__main {

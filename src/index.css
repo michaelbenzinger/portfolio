@@ -58,7 +58,8 @@ a {
   color: var(--bright-blue, #2e77dd);
 }
 
-button {
+a button {
+  color: var(--dark-gray, #1e1e20);
   cursor: pointer;
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
