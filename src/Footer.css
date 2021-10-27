@@ -14,11 +14,13 @@
 }
 
 .footer-link {
+  display: inline-block;
   margin-right: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-links {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer-copyright {
