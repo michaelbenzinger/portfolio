@@ -1,5 +1,6 @@
 import './Footer.css';
 import links from './links.json';
+import resume from './files/Resume_Benzinger_2021October27.pdf'
 
 function Footer() {
   return (
@@ -15,6 +16,9 @@ function Footer() {
               href={site.link}>{site.name}
             </a>
           })}
+          <a href={resume} className='footer-link link-default' target='_blank' rel='noreferrer'>
+            Resume (63 kB)
+          </a>
         </div>
         <h4 className='footer-copyright'>© 2021 Michael Benzinger</h4>
       </div>

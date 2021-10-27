@@ -1,6 +1,7 @@
 import './About.css';
 import about from './about.json';
 import techInfo from './techInfo.json';
+import resume from './files/Resume_Benzinger_2021October27.pdf'
 
 function About() {
   return (
@@ -29,9 +30,9 @@ function About() {
         <a tabIndex="-1" href={about.emailLink}>
           <button className='about__email button__large button__yellow'>Email</button>
         </a>
-        {/* <a href={about.resumeSrc} className='about__resume link-default disabled'>
-          Resume
-        </a> */}
+        <a href={resume} className='about__resume link-default' target='_blank' rel='noreferrer'>
+          Resume (63 kB)
+        </a>
         </div>
       </div>
     </div>
