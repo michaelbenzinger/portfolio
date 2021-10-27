@@ -10,6 +10,8 @@ function Footer() {
           {links.map(site => {
             return <a
               className='footer-link link-default'
+              target='_blank'
+              rel='noreferrer'
               href={site.link}>{site.name}
             </a>
           })}
