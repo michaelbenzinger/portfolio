@@ -43,10 +43,10 @@
 
 .about__technology {
   font-family: Roboto, sans-serif;
-  font-size: min(calc(0.8rem + 0.4vw), 1.05rem);
+  font-size: min(calc(0.75rem + 0.4vw), 1rem);
   font-weight: 400;
   display: inline-block;
-  padding: 0.55em 1.1em;
+  padding: 0.5em 1.05em;
   margin-right: 0.4em;
   margin-bottom: 0.45em;
   border-radius: 100px;

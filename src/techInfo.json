@@ -28,7 +28,7 @@
     "colors": ["#83e1fb", "black"]
   },
   "Node": {
-    "full": "Node.js",
+    "full": "Node",
     "colors": ["#68a643", "white"]
   },
   "Git": {
@@ -46,5 +46,17 @@
   "Linux": {
     "full": "Linux",
     "colors": ["#3563a1", "white"]
+  },
+  "Express": {
+    "full": "Express",
+    "colors": ["#eeeeee", "#353535"]
+  },
+  "MongoDB": {
+    "full": "MongoDB",
+    "colors": ["#00AA57", "white"]
+  },
+  "Pug": {
+    "full": "Pug",
+    "colors": ["#a86454", "white"]
   }
 }

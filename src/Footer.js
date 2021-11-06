@@ -20,7 +20,7 @@ function Footer() {
             Resume (63 kB)
           </a>
         </div>
-        <h4 className='footer-copyright'>© 2021 Michael Benzinger</h4>
+        <h4 className='footer-copyright'>© 2021 Michael Benzinger | Built with React</h4>
       </div>
     </div>
   );
