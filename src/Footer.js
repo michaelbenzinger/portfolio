@@ -1,6 +1,6 @@
 import './Footer.css';
 import links from './links.json';
-import resume from './files/Resume_Benzinger_2021October27.pdf'
+import resume from './files/Resume_Benzinger_2021November06.pdf'
 
 function Footer() {
   return (

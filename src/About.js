@@ -1,7 +1,7 @@
 import './About.css';
 import about from './about.json';
 import techInfo from './techInfo.json';
-import resume from './files/Resume_Benzinger_2021October27.pdf'
+import resume from './files/Resume_Benzinger_2021November06.pdf'
 
 function About() {
   return (
