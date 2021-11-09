@@ -5,14 +5,14 @@ import './index.css';
 import './scroll.js';
 import Navigation from './Navigation';
 import Main from './Main';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navigation />
     <div className='page__main'>
       <Main />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   </React.StrictMode>,
   document.getElementById('root')

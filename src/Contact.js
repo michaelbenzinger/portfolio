@@ -5,7 +5,7 @@ function Contact() {
     <div className='contact'>
       <div className='anchor' id='contact'/>
       <div className='contact__main contained'>
-        <h2 className='contact-title'>Contact Me</h2>
+        <h3 className='contact-title'>Start a Conversation</h3>
         {/* <form>
         <input className='contact-name' type='text' placeholder='Full Name'/>
         <input className='contact-email' type='text' placeholder='Email'/>

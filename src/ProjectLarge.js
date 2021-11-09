@@ -1,5 +1,5 @@
 import techInfo from './techInfo';
-import github from './images/github-32.png';
+import github from './images/github-32-white.png';
 
 function importAll(r) {
   let images = {};
@@ -19,34 +19,62 @@ function ProjectLarge(props) {
   } = props.props;
 
   return (
-    <div className="project-large">
-      <div className='project-large__left'>
-        <a href={linkPreview} target='_blank' rel='noreferrer'>
-          <img alt={`Preview of ${name}`}src={images[imgSrc].default}/>
-        </a>
-      </div>
-      <div className='project-large__right'>
-        <h2 className='project-large__title'>{name}</h2>
-        <div className='project-large__technologies'>
-        {technologies.map(tech => {
-          return <div className='project-large__technology'
-          style={{
-              'background-color': techInfo[tech].colors[0],
-              'color': techInfo[tech].colors[1]
-            }}>{tech}</div>
-        })}
+    <a href={linkPreview} target='_blank' rel='noreferrer'>
+      <div className="project project-large">
+        {/* <div className='project-large__left'>
+          <a href={linkPreview} target='_blank' rel='noreferrer'>
+            <img alt={`Preview of ${name}`}src={images[imgSrc].default}/>
+          </a>
         </div>
-        <p className='project-large__description'>{description}</p>
-        <a tabIndex="-1" href={linkPreview} target='_blank' rel='noreferrer'>
-          <button className='project-large__preview button__yellow'>Live Preview</button>
-        </a>
-        <a tabIndex="-1" href={linkGithub} target='_blank' rel='noreferrer'>
-          <button className='project-large__github'>
-            <img alt='' src={github}/> <span>Github</span>
-          </button>
-        </a>
+        <div className='project-large__right'>
+          <h2 className='project-large__title'>{name}</h2>
+          <div className='project-large__technologies'>
+          {technologies.map(tech => {
+            return <div className='project-large__technology'
+            style={{
+                'background-color': techInfo[tech].colors[0],
+                'color': techInfo[tech].colors[1]
+              }}>{tech}</div>
+          })}
+          </div>
+          <p className='project-large__description'>{description}</p>
+          <a tabIndex="-1" href={linkPreview} target='_blank' rel='noreferrer'>
+            <button className='project-large__preview button__yellow'>Live Preview</button>
+          </a>
+          <a tabIndex="-1" href={linkGithub} target='_blank' rel='noreferrer'>
+            <button className='project-large__github'>
+              <img alt='' src={github}/> <span>Github</span>
+            </button>
+          </a>
+        </div> */}
+        <div className='project__left'>
+          <h2 className='project__title'>{name}</h2>
+          <div className='project__technologies'>
+            {technologies.map(tech => {
+              return <div className='project__technology'
+              style={{
+                  'background-color': techInfo[tech].colors[0],
+                  'color': techInfo[tech].colors[1]
+                }}>{tech}</div>
+            })}
+          </div>
+          <p className='project__description'>{description}</p>
+          <a tabIndex="-1" href={linkPreview} target='_blank' rel='noreferrer'>
+            <button className='project-large__preview button__outline'>Live Preview</button>
+          </a>
+          <a tabIndex="-1" href={linkGithub} target='_blank' rel='noreferrer'>
+            <button className='project-large__github button__outline'>
+              <img alt='' src={github}/> <span>Github</span>
+            </button>
+          </a>
+        </div>
+        <div className='project__right'>
+          <div style={{'background-image': `url("${images[imgSrc].default}")`}} className='project__img__container'>
+            {/* <img className='project-large__img' alt={`Preview of ${name}`}src={images[imgSrc].default}/> */}
+          </div>
+        </div>
       </div>
-    </div>
+    </a>
   );
 }
 

@@ -1,41 +1,59 @@
 .hero__container {
-  width: min(95%, 55rem);
-  padding-top: min(10rem, calc(3rem + 10vw));
-  padding-bottom: min(10rem, calc(3rem + 10vw));
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  width: min(100%);
+  margin-top: min(6rem, calc(0rem + 6vw));
+  margin-bottom: min(16rem, calc(1rem + 16vw));
+  position: relative;
 }
+.hero__text {
+  /* border: 1px solid red; */
+  /* position: relative; */
+  position: relative;
+  padding-top: max(calc(18rem - 24vw), 5rem);
+  z-index: 1;
+  width: min(calc(var(--contained-width) * 0.2 + 20rem), 100%);
+}
+
 .hero__title {
-  font-size: min(calc(2rem + 2vw), 3rem);
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 600;
-  margin-bottom: 0.36em;
+  color: #9ecbff;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 .hero__subtitle {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
-  font-size: 1.2rem;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-.hero__line {
-  flex-grow: 3;
-  border-bottom: 2px solid var(--p-gray, #41444d);
-  position: relative;
-  top: 2.1rem;
-  bottom: 0.5rem;
-  margin-right: min(2vw, 2rem);
-  margin-left: min(1.5vw, 1.5rem);
+  font-size: min(calc(2rem + 3vw), 5rem);
+  line-height: 0.9;
+  margin: 1rem 0;
 }
 .hero__img {
-  width: min(calc(8rem  + 1vw), 12rem);
-  height: min(calc(8rem  + 1vw), 12rem);
+  width: min(calc(var(--contained-width) * 0.47 + 12rem), calc(100% - 2rem));
+  height: min(calc(14rem + 20vw), 29rem);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.hero__img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border: 2px solid var(--p-gray, #41444d);
-  position: relative;
-  /* top: 2.8rem; */
-  /* left: 1rem; */
-  transform: rotate(4deg);
+  border-radius: 8px;
+  box-shadow: 3px 6px 30px 0px rgba(0,0,0,0.4);
+}
+
+.hero__technologies {
+  padding-top: 0.8rem;
+  padding-bottom: 1.5rem;
+}
+
+.hero__technology {
+  font-size: min(calc(0.6rem + 0.4vw), 0.9rem);
+  font-weight: 900;
+  display: inline-block;
+  padding: 0.4em 0.75em;
+  margin-right: 0.3rem;
+  margin-bottom: 0.45rem;
+  border-radius: 0.6em;
+  user-select: none;
+  text-transform: uppercase;
 }

@@ -1,22 +1,25 @@
 {
-  "headline": "Hi, I'm Michael. I'm passionate about building things that are powerful, intuitive, and clean.",
+  "headline": "I'm passionate about building powerful, clean, and intuitive websites and applications.",
   "article": "I am well-organized, resourceful, and driven. I love to learn new and exciting things and see my skills come to life through design and function. I see every programming task as an opportunity to find a creative and robust solution.\nI am a self-taught developer, which I consider one of my greatest strengths. I’m a fast and adaptive learner, and I take responsibility to solve problems and get things done. My skills and knowledge are built on the resources I’ve sought out, and are always growing.",
   "technologies": [
     "JS",
+    "React",
+    "Node",
+    "MongoDB",
+    "Express",
+    "Jest",
     "HTML",
     "CSS",
-    "React",
-    "MongoDB",
-    "Node",
-    "Express",
-    "Git",
-    "Jest",
     "Pug",
-    "Sass",
     "Bootstrap",
+    "Sass",
     "Webpack",
-    "Linux"
+    "Linux",
+    "Git"
   ],
+  "traits1": ["Creative", "Driven", "Confident", "Dependable", "Mature"],
+  "traits2": ["Resourceful", "Organized", "Autonomous", "Friendly", "Collaborative"],
+  "traits3": ["Design-savvy", "Adaptable", "Passionate", "Team-oriented", "Responsible"],
   "tagline": "I'd love to be an asset to your team.",
   "emailLink": "mailto:michael@benzinger.co"
 }

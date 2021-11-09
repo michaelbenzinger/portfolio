@@ -1,8 +1,6 @@
 .nav__bar {
   width: 100vw;
   padding: 1.6rem 0 1.4rem 0;
-  background-color: white;
-  border-bottom: 2px solid var(--p-gray, #41444d);
   position: fixed;
   /* left: -0.45rem; */
   z-index: 3;
@@ -20,19 +18,21 @@ nav {
 }
 
 nav a {
-  margin-left: 2em;
+  margin-left: min(calc(0.4em + 3vw), 2em);
 }
 
 .nav__container a {
-  color: black;
-  font-size: min(calc(0.8rem + 0.5vw), 1.1rem);
+  color: white;
+  font-size: min(calc(0.8rem + 0.5vw), 1.05rem);
+  font-weight: 400;
   text-decoration: none;
-  border-bottom: 2px solid rgba(0,0,0,0);
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid rgba(255,255,255,0);
   transition: border-bottom-color 0.1s, opacity 0.3s;
 }
 
 .nav__container a:hover {
-  border-bottom: 2px solid rgba(0,0,0,1);
+  border-bottom: 1px solid rgba(255,255,255,1);
   transition: border-bottom-color 0.3s, opacity 0.3s;
 }
 

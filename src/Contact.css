@@ -1,6 +1,7 @@
 .contact {
-  padding-top: min(4rem, calc(0rem + 5vw));
-  padding-bottom: min(10rem, calc(3rem + 15vw));
+  padding-top: min(15rem, calc(6rem + 10vw));
+  padding-bottom: min(calc(20vh + 10vw), 30vh);
+  background-color: black;
 }
 
 .contact__main {
@@ -19,9 +20,8 @@
 }
 
 .contact-title {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
+  color: #f2713a;
+  font-weight: 500;
   margin-bottom: 1.2rem;
 }
 
@@ -53,9 +53,7 @@
 }
 
 .contact-address {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 0;
+  font-size: min(calc(1.3rem + 2vw), 3.4rem);
   font-weight: 600;
   margin-top: 0.5rem;
   /* padding-bottom: 0.1rem; */

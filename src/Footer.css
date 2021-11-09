@@ -7,7 +7,6 @@
 }
 
 .footer-title {
-  font-family: 'Work Sans', sans-serif;
   font-size: 1.35rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -24,7 +23,6 @@
 }
 
 .footer-copyright {
-  font-family: 'Work Sans', sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--p-gray, #41444d);
