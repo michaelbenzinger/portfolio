@@ -95,6 +95,29 @@
   color: #f2713a;
 }
 
+.about:hover .about__traits-1,
+.about:active .about__traits-1 {
+  animation: activate 1s;
+}
+.about:hover .about__traits-2,
+.about:active .about__traits-2 {
+  animation: activate 1.5s 0.06s;
+}
+.about:hover .about__traits-3,
+.about:active .about__traits-3 {
+  animation: activate 2s 0.12s;
+}
+
+@keyframes activate {
+  0% {
+  }
+  10% {
+    color: white;
+  }
+  100% {
+  }
+}
+
 .about__trait {
   display: inline-block;
   font-size: min(calc(0.7rem + 1.2vw), 1.4rem);
