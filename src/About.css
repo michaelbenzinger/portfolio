@@ -101,4 +101,13 @@
   margin-right: min(calc(0.4rem + 0.5vw), 1rem);
   margin-left: min(calc(0.4rem + 0.5vw), 1rem);
   margin-bottom: min(calc(0.4rem + 0.5vw), 1rem);
+  transition: letter-spacing 1.2s, filter 5s;
+  cursor: default;
+}
+
+.about__trait:hover,
+.about__trait:active {
+  filter: brightness(10) saturate(0);
+  letter-spacing: 0.1rem;
+  transition: letter-spacing 0.5s, filter 1.5s;
 }

@@ -1,13 +1,13 @@
 [
   {
-    "name": "Library Catalog",
-    "technologies": ["Node", "Express", "MongoDB", "Pug", "JS"],
+    "name": "Resume Studio",
+    "technologies": ["React", "Bootstrap", "JS", "CSS", "HTML"],
     "technologiesShort": ["Node", "Express", "MongoDB"],
-    "description": "A local library catalog built in the MVC pattern using Node, Express, MongoDB, and Pug. Supports full CRUD functionality.",
-    "descriptionShort": "A library catalog built in the MVC pattern.",
-    "linkGithub": "https://github.com/michaelbenzinger/local-library",
-    "linkPreview": "https://powerful-cove-53771.herokuapp.com/",
-    "imgSrc": "sample-local-library.png"
+    "description": "A Resume Generator built with React and Reactstrap. Add information, customize preferences, and print formatted resume.",
+    "descriptionShort": "A Resume Generator built with React.",
+    "linkGithub": "https://github.com/michaelbenzinger/resume-studio",
+    "linkPreview": "https://michaelbenzinger.github.io/resume-studio/",
+    "imgSrc": "sample-resume-studio.png"
   },
   {
     "name": "Weather App",
@@ -17,7 +17,17 @@
     "descriptionShort": "An application that displays weather from the OpenWeather API.",
     "linkGithub": "https://github.com/michaelbenzinger/weather-app",
     "linkPreview": "https://michaelbenzinger.github.io/weather-app/",
-    "imgSrc": "sample-weather.png"
+    "imgSrc": "sample-weather-2.png"
+  },
+  {
+    "name": "Library Catalog",
+    "technologies": ["Node", "Express", "MongoDB", "Pug", "JS"],
+    "technologiesShort": ["Node", "Express", "MongoDB"],
+    "description": "A local library catalog built in the MVC pattern using Node, Express, MongoDB, and Pug. Supports full CRUD functionality.",
+    "descriptionShort": "A library catalog built in the MVC pattern.",
+    "linkGithub": "https://github.com/michaelbenzinger/local-library",
+    "linkPreview": "https://powerful-cove-53771.herokuapp.com/",
+    "imgSrc": "sample-local-library.png"
   },
   {
     "name": "To-Do List",

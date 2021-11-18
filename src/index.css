@@ -20,8 +20,8 @@ html {
 body {
   overflow: overlay;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -49,7 +49,8 @@ h4 {
   font-size: 1.2rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   letter-spacing: -0.02em;
 }
 
@@ -71,11 +72,7 @@ a button {
   border-radius: 8px;
   padding: 0.8rem 1.5rem;
   background-color: white;
-  transition:
-    color 0.2s,
-    transform 0.2s,
-    box-shadow 0.3s,
-    background-color 0.2s,
+  transition: color 0.2s, transform 0.2s, box-shadow 0.3s, background-color 0.2s,
     border-color 0.2s;
 }
 
@@ -86,8 +83,23 @@ a button {
 
 .button__orange {
   color: white;
-  background: linear-gradient(82deg, #db472d, #e05f36);
+  background: -webkit-linear-gradient(82deg, #db472d, #e09136);
+  background: -moz-linear-gradient(82deg, #db472d, #e09136);
+  background: -o-linear-gradient(82deg, #db472d, #e09136);
+  background: linear-gradient(82deg, #db472d, #e09136);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+  background-size: 40rem 4rem;
   border: 0;
+}
+.button__large.button__orange:hover {
+  background-position: -13rem;
+}
+.button__large.button__orange:active {
+  transition: background 0.15s;
+  background-position: -3rem;
 }
 
 .button__outline {
@@ -136,7 +148,9 @@ div.anchor {
   color: #4274cf;
 }
 
-a.disabled, a.disabled:hover, a.disabled:active {
+a.disabled,
+a.disabled:hover,
+a.disabled:active {
   pointer-events: none;
   color: var(--disabled-gray, #828692);
   border-bottom: none;

@@ -7,7 +7,6 @@
 }
 
 .projects__main {
-
 }
 
 .project {
@@ -17,11 +16,17 @@
   display: flex;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 3px 6px 18px 0px rgba(0,0,0,0.3);
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.3);
+  transition: filter 0.8s, box-shadow 0.6s;
+}
+
+.project:hover {
+  filter: brightness(1.11);
+  box-shadow: 4px 8px 22px 0px rgba(0, 0, 0, 0.4);
+  transition: filter 0.3s, box-shadow 0.2s;
 }
 
 .project-large {
-
 }
 
 .project-small {
@@ -45,6 +50,7 @@
 
 .project-small__github {
   margin-left: auto;
+  transition: transform 0.2s;
 }
 
 .project-small__github img {
@@ -52,6 +58,14 @@
   top: -0.35em;
   width: 1.8em;
   height: 1.8em;
+}
+
+.project-small__github:hover {
+  transform: scale(1.1);
+}
+.project-small__github:active {
+  transition: transform 0.05s;
+  transform: scale(1.06);
 }
 
 .project-small .project__technologies {
@@ -126,6 +140,14 @@
   border-radius: 0.6em;
   padding: 0.6em 1em;
   margin-right: 0.5em;
+  transition: background-color 0.3s;
+}
+
+.project button:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.project button:active {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .project-large__github {

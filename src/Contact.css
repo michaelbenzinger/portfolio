@@ -25,7 +25,8 @@
   margin-bottom: 1.2rem;
 }
 
-.contact__main form input, .contact__main form textarea {
+.contact__main form input,
+.contact__main form textarea {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -57,4 +58,13 @@
   font-weight: 600;
   margin-top: 0.5rem;
   /* padding-bottom: 0.1rem; */
+  transition: color 0.5s, letter-spacing 0.5s;
+}
+
+.contact-address:hover {
+  letter-spacing: 0.02rem;
+}
+.contact-address:active {
+  transition: letter-spacing 0.2s;
+  letter-spacing: -0.01rem;
 }
