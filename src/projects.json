@@ -1,5 +1,15 @@
 [
   {
+    "name": "Shoebie E-Commerce Site",
+    "technologies": ["React", "Redux", "Express", "CSS", "API"],
+    "technologiesShort": ["Node", "Express", "MongoDB"],
+    "description": "An E-Commerce site Frontend built from the ground up with React and Redux with product filtering and cart management.",
+    "descriptionShort": "An E-Commerce site built with React.",
+    "linkGithub": "https://github.com/michaelbenzinger/shoebie",
+    "linkPreview": "https://sheltered-ravine-30141.herokuapp.com/",
+    "imgSrc": "sample-shoebie.png"
+  },
+  {
     "name": "Resume Studio",
     "technologies": ["React", "Bootstrap", "JS", "CSS", "HTML"],
     "technologiesShort": ["Node", "Express", "MongoDB"],

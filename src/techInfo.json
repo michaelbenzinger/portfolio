@@ -27,6 +27,10 @@
     "full": "React",
     "colors": ["#83e1fb", "black"]
   },
+  "Redux": {
+    "full": "Redux",
+    "colors": ["#764abc", "white"]
+  },
   "Node": {
     "full": "Node",
     "colors": ["#68a643", "white"]

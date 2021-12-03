@@ -4,6 +4,7 @@
   "technologies": [
     "JS",
     "React",
+    "Redux",
     "Node",
     "MongoDB",
     "Express",
@@ -18,8 +19,20 @@
     "Git"
   ],
   "traits1": ["Creative", "Driven", "Confident", "Dependable", "Mature"],
-  "traits2": ["Resourceful", "Organized", "Autonomous", "Friendly", "Collaborative"],
-  "traits3": ["Design-savvy", "Adaptable", "Passionate", "Team-oriented", "Responsible"],
+  "traits2": [
+    "Resourceful",
+    "Organized",
+    "Autonomous",
+    "Friendly",
+    "Collaborative"
+  ],
+  "traits3": [
+    "Design-savvy",
+    "Adaptable",
+    "Passionate",
+    "Team-oriented",
+    "Responsible"
+  ],
   "tagline": "I'd love to be an asset to your team.",
   "emailLink": "mailto:michael@benzinger.co"
 }
