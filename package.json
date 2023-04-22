@@ -1,44 +1,40 @@
 {
-  "name": "portfolio-october",
-  "homepage": "https://benzinger.co",
-  "version": "0.1.0",
+  "name": "website-2023",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+  "description": "website-2023",
+  "author": "Michael Benzinger",
+  "keywords": [
+    "gatsby"
+  ],
+  "eslintConfig": {
+    "rules": {
+      "eqeqeq": "off"
+    }
   },
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@formspree/react": "^2.4.1",
+    "babel-plugin-styled-components": "^2.1.1",
+    "gatsby": "^5.8.1",
+    "gatsby-plugin-image": "^3.8.0",
+    "gatsby-plugin-sharp": "^5.8.1",
+    "gatsby-plugin-styled-components": "^6.8.0",
+    "gatsby-source-filesystem": "^5.8.0",
+    "gatsby-transformer-sharp": "^5.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-media": "^1.10.0",
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "polished": "^4.2.2"
   }
 }
