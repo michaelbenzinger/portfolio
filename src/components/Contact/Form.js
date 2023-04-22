@@ -73,6 +73,7 @@ const StyledValidationError = styled(ValidationError)`
 const Button = styled.button`
     ${createFontRules(16, 20, 17, 21)};
     font-family: Inter, sans-serif;
+    font-weight: 400;
     ${letterSpacingM};
     background: ${({theme}) => theme == 'light' ? colors.blueC1 : colors.blueC2};
     color: ${colors.grayL1};

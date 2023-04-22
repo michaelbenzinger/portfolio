@@ -39,7 +39,7 @@ const HighlightWrapper = styled.button`
 
     @media (max-width: ${({bp}) => bp}px) {
         height: ${({open}) => open ? 'auto' : '3.4em'};
-        padding: 24px ${createClamp(15, 30)};
+        padding: 20px ${createClamp(15, 30)};
         cursor: pointer;
 
         @media (hover: hover) {
