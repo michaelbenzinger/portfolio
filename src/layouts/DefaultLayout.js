@@ -24,6 +24,7 @@ const StyledMain = styled.main`
 export const ThemeContext = createContext(null);
 
 const DefaultLayout = ({ children }) => {
+    // @todo - bug when reloading in dark mode
     const [theme, _setTheme] = useState(() => {
         let _state = '';
         const themePref = {};
