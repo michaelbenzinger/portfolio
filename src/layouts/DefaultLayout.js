@@ -28,7 +28,7 @@ const DefaultLayout = ({ children }) => {
         let _state = '';
         const themePref = {};
         // Check system theme preference
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        if (typeof window !== "undefined" && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             themePref.system = 'dark';
         } else {
             themePref.system = 'light';
@@ -36,7 +36,7 @@ const DefaultLayout = ({ children }) => {
 
         // Set state variable, trying session theme first then system theme
         if (
-            window.sessionStorage.getItem('mbc-theme-pref') &&
+            typeof window !== "undefined" && window.sessionStorage.getItem('mbc-theme-pref') &&
             JSON.parse(window.sessionStorage.getItem('mbc-theme-pref')).session
         ) {
             _state = JSON.parse(window.sessionStorage.getItem('mbc-theme-pref')).session
@@ -47,8 +47,8 @@ const DefaultLayout = ({ children }) => {
 
         // Set system theme preference to sessionStorage if it's not there or if it isn't matching already
         if (
-            !window.sessionStorage.getItem('mbc-theme-pref') ||
-            JSON.parse(window.sessionStorage.getItem('mbc-theme-pref')).system != themePref.system
+            typeof window !== "undefined" && !window.sessionStorage.getItem('mbc-theme-pref') ||
+            typeof window !== "undefined" && JSON.parse(window.sessionStorage.getItem('mbc-theme-pref')).system != themePref.system
         ) {
             window.sessionStorage.setItem('mbc-theme-pref', JSON.stringify(themePref));
         }
@@ -63,7 +63,7 @@ const DefaultLayout = ({ children }) => {
         _setTheme(update);
 
         let themePref = {};
-        if (window.sessionStorage.getItem('mbc-theme-pref')) {
+        if (typeof window !== "undefined" && window.sessionStorage.getItem('mbc-theme-pref')) {
             themePref = JSON.parse(window.sessionStorage.getItem('mbc-theme-pref'));
         }
         themePref.session = update;

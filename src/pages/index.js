@@ -19,6 +19,6 @@ export default IndexPage;
 
 export const Head = () => (
     <HeadWrapper>
-        <title>Home Page</title>
+        <title>Michael Benzinger — Frontend Developer</title>
     </HeadWrapper>
 );
