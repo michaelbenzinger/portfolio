@@ -8,7 +8,7 @@ import * as colors from '../../util/colors';
 const expandedHeight = 80;
 const collapsedHeight = 55;
 const shrinkBreakpoint = 540;
-const logoSizeSm = 24;
+const logoSizeSm = 22;
 const logoSizeLg = 28;
 
 const NavContainer = styled.nav`

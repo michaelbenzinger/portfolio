@@ -31,7 +31,7 @@ const TechList = styled.ul`
     display: inline-block;
     padding: 1em 0;
     max-width: 1000px;
-    margin: 0 -15px;
+    margin: 0 -30px;
 `;
 
 const TechCapsule = styled.li`

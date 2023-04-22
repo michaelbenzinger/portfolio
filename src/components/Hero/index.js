@@ -10,12 +10,12 @@ import Highlight from './Highlight';
 export const bp = 700;
 export const heroBgLight = colors.grayL1;
 export const heroBgDark = colors.blueD3;
-const paddingSm = 70;
+const paddingSm = 50;
 const paddingLg = 150;
 
 const innerStyles = `
     padding-top: ${createClamp(paddingSm, paddingLg)};
-    padding-bottom: ${createClamp(0, 0)};
+    padding-bottom: 0;
 `;
 
 const Content = styled.div`
@@ -34,7 +34,7 @@ const Title = styled.span`
 `;
 
 const Subtitle = styled.span`
-    ${createFontRules(15, 23, 22, 28)};
+    ${createFontRules(17, 23, 22, 28)};
     ${letterSpacingM};
     max-width: 45ch;
     margin: 0 auto;
@@ -45,7 +45,7 @@ const Subtitle = styled.span`
 `;
 
 const CTA = styled.a`
-    ${createFontRules(14, 15, 20, 22)};
+    ${createFontRules(15, 15, 20, 22)};
     ${letterSpacingM};
     font-weight: 500;
     color: ${({theme}) => theme == 'light' ? colors.blueD1 : colors.grayM2};
@@ -53,7 +53,7 @@ const CTA = styled.a`
 `;
 
 const Highlights = styled.div`
-    margin: ${createClamp(paddingSm, paddingLg)}
+    margin: ${createClamp(paddingSm * 1.25, paddingLg)}
         ${createClamp(-30, -15)}
         0
         ${createClamp(-30, -15)};
