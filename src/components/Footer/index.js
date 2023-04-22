@@ -44,7 +44,7 @@ const Social = styled.a`
         margin-left: 1em;
     }
     height: 2em;
-    aspect-ratio: 2em;
+    width: 2em;
 
     svg {
         height: 100%;
