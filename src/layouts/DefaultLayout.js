@@ -1,4 +1,4 @@
-import React, { createContext, useRef, useState } from 'react';
+import React, { createContext, useRef, useState, useEffect } from 'react';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import { GlobalStyle, NormalizeGlobalStyle } from '../components/global';
 import { Footer, Navigation } from '../components';
@@ -14,82 +14,49 @@ const StyledMain = styled.main`
     ${transitionAll};
 `;
 
-// const ColorProvider = styled.div`
-//     ${props => props.theme == 'light'
-//         ? lightThemeBase
-//         : darkThemeBase
-//     }
-// `;
-
 export const ThemeContext = createContext(null);
 
 const DefaultLayout = ({ children }) => {
-    // @todo - bug when reloading in dark mode
-    const [theme, _setTheme] = useState(() => {
-        let _state = '';
-        const themePref = {};
-        // Check system theme preference
-        if (typeof window !== "undefined" && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            themePref.system = 'dark';
-        } else {
-            themePref.system = 'light';
-        }
-
-        // Set state variable, trying session theme first then system theme
-        if (
-            typeof window !== "undefined" && window.sessionStorage.getItem('mbc-theme-pref') &&
-            JSON.parse(window.sessionStorage.getItem('mbc-theme-pref')).session
-        ) {
-            _state = JSON.parse(window.sessionStorage.getItem('mbc-theme-pref')).session
-            themePref.session = _state;
-        } else {
-            _state = themePref.system;
-        }
-
-        // Set system theme preference to sessionStorage if it's not there or if it isn't matching already
-        if (
-            typeof window !== "undefined" && !window.sessionStorage.getItem('mbc-theme-pref') ||
-            typeof window !== "undefined" && JSON.parse(window.sessionStorage.getItem('mbc-theme-pref')).system != themePref.system
-        ) {
-            window.sessionStorage.setItem('mbc-theme-pref', JSON.stringify(themePref));
-        }
-
-        // Return theme preference as initial state
-        return _state;
-    });
+    const [theme, _setTheme] = useState('light');
     const themeRef = useRef(theme);
 
     const setTheme = update => {
         themeRef.current = update;
         _setTheme(update);
+    };
 
-        let themePref = {};
-        if (typeof window !== "undefined" && window.sessionStorage.getItem('mbc-theme-pref')) {
-            themePref = JSON.parse(window.sessionStorage.getItem('mbc-theme-pref'));
+    useEffect(() => {
+        if (window.sessionStorage.getItem('mbc-session-pref')) {
+            setTheme(window.sessionStorage.getItem('mbc-session-pref'));
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme('dark');
         }
-        themePref.session = update;
-        window.sessionStorage.setItem('mbc-theme-pref', JSON.stringify(themePref));
-    }
+        // Otherwise, we'll use the default 'light' theme
+    }, []);
+
+    const updateSessionPreference = update => {
+        window.sessionStorage.setItem('mbc-session-pref', update);
+    };
 
     const toggleTheme = () => {
         if (themeRef.current == 'light') {
             setTheme('dark');
+            updateSessionPreference('dark');
         } else {
             setTheme('light');
+            updateSessionPreference('light');
         }
-    }
+    };
 
     return (
         <ThemeContext.Provider value={theme}>
-            {/* <ColorProvider theme={theme}> */}
-                <NormalizeGlobalStyle />
-                <GlobalStyle />
-                <GoogleReCaptchaProvider reCaptchaKey="6Lej7oklAAAAALhW3CZh1nZhaWlAki5acBG0z08l">
-                    <Navigation toggleTheme={toggleTheme} />
-                    <StyledMain theme={theme}>{children}</StyledMain>
-                    <Footer theme={theme} />
-                </GoogleReCaptchaProvider>
-            {/* </ColorProvider> */}
+            <NormalizeGlobalStyle />
+            <GlobalStyle />
+            <GoogleReCaptchaProvider reCaptchaKey="6Lej7oklAAAAALhW3CZh1nZhaWlAki5acBG0z08l">
+                <Navigation toggleTheme={toggleTheme} />
+                <StyledMain theme={theme}>{children}</StyledMain>
+                <Footer theme={theme} />
+            </GoogleReCaptchaProvider>
         </ThemeContext.Provider>
     );
 };

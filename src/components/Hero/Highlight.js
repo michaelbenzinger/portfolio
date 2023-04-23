@@ -89,6 +89,10 @@ const HighlightText = styled.span`
 const Highlight = ({ title, text, bp, theme }) => {
     const [open, setOpen] = useState(false);
 
+    if (typeof window == 'undefined') {
+        return null;
+    }
+
     const toggle = () => { setOpen(!open); }
 
     return (

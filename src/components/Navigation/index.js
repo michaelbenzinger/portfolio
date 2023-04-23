@@ -5,7 +5,7 @@ import { createClamp, createFontRules, throttle } from '../../util/functions';
 import { ThemeContext } from '../../layouts/DefaultLayout';
 import * as colors from '../../util/colors';
 
-const expandedHeight = 80;
+export const expandedHeight = 80;
 const collapsedHeight = 55;
 const shrinkBreakpoint = 540;
 const logoSizeSm = 22;
