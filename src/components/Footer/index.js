@@ -72,7 +72,7 @@ const Footer = () => {
         >
             <FooterWrapper>
                 <Left>
-                    <span>Designed, redesigned, and built with ☕ and 🍺 by Michael Benzinger. © {new Date().getFullYear()}</span>
+                    <span>Designed and built with ☕ by Michael Benzinger © {new Date().getFullYear()}</span>
                 </Left>
                 <Right>
                     <Social
