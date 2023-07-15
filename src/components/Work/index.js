@@ -71,14 +71,14 @@ const Work = () => {
                 `} img={() => <StaticImage alt='' src='../../images/keytruda.jpg'/>}
                     href="https://keytruda.com"
                 />
-                <Project theme={theme} bp={bp} title='keytrudalenvima.com' text1={`
-                    <p>Handlebars</p>
-                    <p>JavaScript</p>
-                    <p>Sass</p>
+                <Project theme={theme} bp={bp} title='mothertongue.com' text1={`
+                    <p>React</p>
+                    <p>Styled Components</p>
+                    <p>Prismic</p>
                 `} text2={`
-                    <p>Role: Development support</p>
-                `} img={() => <StaticImage alt='' src='../../images/keytrudalenvima.jpg'/>}
-                    href="https://keytrudalenvima.com"
+                    <p>Role: Component development</p>
+                `} img={() => <StaticImage alt='' src='../../images/mothertongue.jpg'/>}
+                    href="https://mothertongue.com"
                 />
             </ProjectsFlex>
         </Section>
