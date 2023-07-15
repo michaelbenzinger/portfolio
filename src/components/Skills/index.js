@@ -92,14 +92,17 @@ const Hero = () => {
                 <Technology name="JavaScript" svg={tech.javascript} />
                 <Technology name="CSS3" svg={tech.css} />
                 <Technology name="Git" svg={tech.git} />
+                <Technology name="Ruby" svg={tech.ruby} />
                 <Technology name="HTML5" svg={tech.html} />
                 <Technology name="Gatsby" svg={tech.gatsby} />
                 <Technology name="styled-components" svg={tech.styled} />
                 <Technology name="Node" svg={tech.node} />
                 <Technology name="Storybook" svg={tech.storybook} />
+                <Technology name="Rails" svg={tech.rails} />
                 <Technology name="Sass" svg={tech.sass} />
                 <Technology name="Jest" svg={tech.jest} />
                 <Technology name="Redux" svg={tech.redux} />
+                <Technology name="Handlebars" svg={tech.handlebars} />
                 <Technology name="NextJS" svg={tech.next} />
                 <Technology name="Python" svg={tech.python} />
             </TechList>
