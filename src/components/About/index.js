@@ -58,6 +58,7 @@ const Title2 = styled.span`
     font-weight: 700;
     display: block;
     color: ${({theme}) => theme == 'light' ? colors.blueD1 : colors.grayL2};
+    margin-bottom: 0.5em;
 
     &:not(:first-child) {
         margin-top: 1.25em;
@@ -70,7 +71,7 @@ const Title3 = styled.span`
     font-weight: 400;
     display: block;
     color: ${({theme}) => theme == 'light' ? colors.grayD3 : colors.grayL3};
-    margin-top: 0.5em;
+    margin: 0.3em 0 0.2em;
 `;
 
 const Detail = styled.span`
@@ -78,7 +79,7 @@ const Detail = styled.span`
     ${letterSpacingM};
     font-weight: 400;
     display: block;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.7em;
     color: ${({theme}) => theme == 'light' ? colors.grayD1 : colors.grayM2};
 `;
 
@@ -107,12 +108,13 @@ const About = () => {
                 </AboutColumn>
                 <HistoryColumn>
                     <Title2 theme={theme} as='h3'>Work history</Title2>
-                    <Title3 theme={theme} as='h4'>Designory (Current)</Title3>
-                    <Detail theme={theme} as='p'>Jr. Engineer II, 2021 – Current</Detail>
-                    <Title3 theme={theme} as='h4'>Freelance</Title3>
-                    <Detail theme={theme} as='p'>Graphic Designer/Web Developer, 2020 – 2022</Detail>
-                    <Title3 theme={theme} as='h4'>Lord of Glory Lutheran Church</Title3>
-                    <Detail theme={theme} as='p'>Music Director, 2016 – 2020</Detail>
+                    <Title3 theme={theme} as='h4'>Engineer I (2023 – Current)</Title3>
+                    <Title3 theme={theme} as='h4'>Jr. Engineer II (2021 – 2023)</Title3>
+                    <Detail theme={theme} as='p'>Designory, 2021 – Current</Detail>
+                    <Title3 theme={theme} as='h4'>Graphic Designer/Web Developer</Title3>
+                    <Detail theme={theme} as='p'>Freelance, 2020 – 2022</Detail>
+                    <Title3 theme={theme} as='h4'>Music Director</Title3>
+                    <Detail theme={theme} as='p'>Lord of Glory Lutheran Church, 2016 – 2020</Detail>
 
                     <Title2 theme={theme} as='h3'>Education</Title2>
                     <Title3 theme={theme} as='h4'>Berklee College of Music</Title3>
