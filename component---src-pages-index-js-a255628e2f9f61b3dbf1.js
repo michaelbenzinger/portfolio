@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwebsite_2023=self.webpackChunkwebsite_2023||[]).push([[678],{6558:function(e,n,t){t.r(n),t.d(n,{Head:function(){return c}});var l=t(7294),r=t(42),u=t(582);t(6326);n.default=()=>l.createElement(r.Z,null);const c=()=>l.createElement(u.TO,null,l.createElement("title",null,"Michael Benzinger — Frontend Developer"))}}]);
-//# sourceMappingURL=component---src-pages-index-js-a255628e2f9f61b3dbf1.js.map
